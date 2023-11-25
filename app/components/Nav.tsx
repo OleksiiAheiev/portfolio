@@ -1,7 +1,5 @@
-"use client";
-
 import React, { useState } from "react";
-import { BurgerMenu, Github } from "../icons";
+import { BurgerMenu } from "../icons";
 import MobileMenu from "./MobileMenu";
 import DropDownMenu from "./DropDownMenu";
 import Link from "next/link";

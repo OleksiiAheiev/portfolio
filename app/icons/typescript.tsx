@@ -17,8 +17,8 @@ export default function TypeScript({ className }: { className?: string }) {
         y2="46.737"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0" stop-color="#2aa4f4"></stop>
-        <stop offset="1" stop-color="#007ad9"></stop>
+        <stop offset="0" stopColor="#2aa4f4"></stop>
+        <stop offset="1" stopColor="#007ad9"></stop>
       </linearGradient>
       <rect
         width="36"
