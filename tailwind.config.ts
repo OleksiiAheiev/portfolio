@@ -9,6 +9,9 @@ module.exports = {
 	darkMode: 'class',
 	theme: {
 		extend: {
+			height: {
+        '500vh': '500vh',
+      },
 			container: {
 				center: true,
 				padding: {

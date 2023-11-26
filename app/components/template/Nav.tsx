@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BurgerMenu } from "../icons";
+import { BurgerMenu } from "../../icons";
 import MobileMenu from "./MobileMenu";
 import DropDownMenu from "./DropDownMenu";
 import Link from "next/link";
@@ -13,7 +13,7 @@ export default function Nav({}) {
   };
 
   return (
-    <header className="container">
+    <header className="container z-20">
       <nav
         className="flex items-center justify-between w-full pt-5 pb-5 "
         aria-label="Global"

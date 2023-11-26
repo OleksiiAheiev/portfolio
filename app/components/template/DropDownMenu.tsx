@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Check, ChevronDown, Monitor, Moon, SunDim } from "../icons";
+import { Check, ChevronDown, Monitor, Moon, SunDim } from "../../icons";
 import { IAppearance } from "@/lib/types";
 import { useTheme } from "next-themes";
 import { Popover, Transition } from "@headlessui/react";

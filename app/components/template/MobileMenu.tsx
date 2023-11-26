@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import { useTheme } from "next-themes";
-import { Check, ChevronDown, CloseMenu } from "../icons";
+import { Check, ChevronDown, CloseMenu } from "../../icons";
 import { appearances } from "./DropDownMenu";
 import { Dialog, Disclosure, Transition } from "@headlessui/react";
 import Link from "next/link";
