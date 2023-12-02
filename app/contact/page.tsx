@@ -4,7 +4,7 @@ import { Github, LinkIkon, LinkedIn, Mail, Telegram } from "../icons";
 import Card from "../components/Card";
 import { IContacts } from "@/lib/types";
 
-export const contacts: IContacts[] = [
+const contacts: IContacts[] = [
   {
     icon: <Mail className="inline-block w-5 h-5" />,
     href: "mailto:aheiev.oleksii@gmail.com",
