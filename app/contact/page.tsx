@@ -34,7 +34,7 @@ const contacts: IContacts[] = [
 export default function Contact() {
   return (
     <main className="cursor-default bg-gradient-to-tl dark:from-black from-white dark:via-zinc-700/30 via-zinc-700/30 dark:to-black to-white">
-      <div className="flex flex-col justify-center h-screen w-min-screen">
+      <div className="flex flex-col justify-center min-h-screen w-min-screen">
         <Navigation />
         <div className="container my-auto">
           <div className="h-px animate-glow animate-fade-left bg-gradient-to-r from-zinc-900/0 dark:from-zinc-300/0 via-black dark:via-zinc-300/50 to-zinc-900/0 dark:to-zinc-300/0" />
@@ -45,7 +45,7 @@ export default function Contact() {
           </div>
           <div className="h-px animate-fade-in bg-gradient-to-r from-zinc-900/0 dark:from-zinc-300/10 via-black dark:via-zinc-300/50 to-zinc-900/0 dark:to-zinc-300/0" />
           <div className="h-px animate-glow animate-fade-right bg-gradient-to-r from-zinc-900/0 dark:from-zinc-300/0 via-black dark:via-zinc-300/50 to-zinc-900/0 dark:to-zinc-300/0" />
-          <div className="grid w-full grid-cols-1 gap-5 sm:grid-cols-2 animate-fade-in">
+          <div className="grid w-full grid-cols-1 gap-5 my-5 sm:grid-cols-2 animate-fade-in">
             {contacts.map(({ icon, label, href, handle }) => (
               <Card key={label}>
                 <Link
