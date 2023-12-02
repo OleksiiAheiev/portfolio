@@ -40,3 +40,9 @@ export interface IAppearanceButtonProps extends ILogo {
   theme: string;
   currentTheme?: string;
 }
+
+export interface IContacts extends ILogo {
+  href: string;
+  label: string;
+  handle: string;
+}
