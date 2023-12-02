@@ -1,6 +1,13 @@
-export interface IAppearance {
-  theme: string;
+export interface IReactNode {
+  children: React.ReactNode;
+}
+
+interface ILogo {
   icon: React.ReactElement;
+}
+
+export interface IAppearance extends ILogo {
+  theme: string;
 };
 
 export interface INavigation {
@@ -8,14 +15,12 @@ export interface INavigation {
   href: string;
 }
 
-export interface IScrollingProps {
-  children: React.ReactNode;
+export interface IScrollingProps extends IReactNode {
   baseVelocity: number;
 }
 
-export interface ILogo {
+export interface ILogos extends ILogo {
   name: string;
-  icon: React.ReactElement;
 }
 
 export interface IMousePosition {
@@ -29,4 +34,9 @@ export interface IParticlesProps {
   staticity?: number;
   ease?: number;
   refresh?: boolean;
+}
+
+export interface IAppearanceButtonProps extends ILogo {
+  theme: string;
+  currentTheme?: string;
 }

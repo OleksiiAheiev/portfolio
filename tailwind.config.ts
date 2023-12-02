@@ -109,7 +109,7 @@ module.exports = {
 					},
 
 					"100%": {
-						"line-height": "100%",
+						"line-height": "110%",
 						opacity: "100%",
 					},
 				},

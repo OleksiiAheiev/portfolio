@@ -15,3 +15,8 @@ export { default as Tailwind } from "./tailwind";
 export { default as Typescript } from "./typescript";
 export { default as Redux } from "./redux";
 export { default as Mui } from "./mui";
+export { default as Logo } from "./logo";
+export { default as LinkIkon } from "./link";
+export { default as Mail } from "./mail";
+export { default as LinkedIn } from "./linkedIn";
+export { default as Telegram } from "./telegram";

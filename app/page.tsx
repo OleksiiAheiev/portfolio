@@ -1,12 +1,10 @@
 "use client";
 
-import Nav from "./components/template/Nav";
 import {
   Css,
   Github,
   Html,
   Javascript,
-  Moon,
   Mui,
   NextJs,
   React,
@@ -17,6 +15,8 @@ import {
 import { Particles } from "./components/Particles";
 import { ILogo } from "@/lib/types";
 import ScrollingEffect from "./components/ScrollingEffect";
+import Navigation from "./components/template/Navigation/Navigation";
+import Logos from "./components/Logos";
 
 const logos: ILogo[] = [
   {
@@ -65,12 +65,11 @@ export default function Home() {
   return (
     <div className="h-500vh overflow-hidden">
       <div className="flex flex-col fixed top-0 left-0 bottom-0 right-0 justify-center items-center transition-all duration-1000">
-        <Nav />
+        <Navigation />
         <div className="container flex flex-col items-center justify-center flex-grow gap-4 overflow-hidden lg:max-w-6xl">
           <div className="text-center animate-fade-in">
             <h2 className="text-xl text-zinc-500">Hey I&apos;m Oleksii</h2>
           </div>
-          {/* Add a fixed gradient background */}
           <div className="fixed inset-0 bg-gradient-to-tl dark:from-black from-white dark:via-zinc-700/30 via-zinc-700/30 dark:to-black to-white z-0" />
           <Particles
             className="absolute inset-0 -z-10 animate-fade-in"
@@ -86,11 +85,7 @@ export default function Home() {
           <div className="w-screen h-px animate-glow animate-fade-right bg-gradient-to-r from-zinc-900/0 dark:from-zinc-300/0 via-black dark:via-zinc-300/50 to-zinc-900/0 dark:to-zinc-300/0" />
           <div className="overflow-hidden text-center lg:max-w-6xl">
             <ScrollingEffect baseVelocity={5}>
-              {logos.map((logo, index) => (
-                <span key={index} className="mr-10 animate-fade-in">
-                  {logo.icon}
-                </span>
-              ))}
+              <Logos logos={logos} className="mr-10 animate-fade-in" />
             </ScrollingEffect>
           </div>
         </div>
