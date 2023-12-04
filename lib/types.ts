@@ -3,7 +3,7 @@ export interface IReactNode {
 }
 
 interface ILogo {
-  icon: React.ReactElement;
+  icon: React.ReactNode;
 }
 
 export interface IAppearance extends ILogo {
@@ -50,4 +50,8 @@ export interface IContacts extends ILogo {
   href: string;
   label: string;
   handle: string;
+}
+
+export interface IContactList {
+  contacts: IContacts[];
 }

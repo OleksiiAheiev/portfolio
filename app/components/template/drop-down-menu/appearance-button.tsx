@@ -11,7 +11,10 @@ export default function AppearanceButton({
 
   return (
     <button
-      className="flex items-center py-2 pl-6 pr-3 space-x-5 text-sm font-semibold leading-7"
+      className={`flex items-center py-2 pl-6 pr-3 space-x-5 text-sm font-semibold leading-7 duration-1000 text-zinc-500 hover:text-zinc-950 dark:text-zinc-500 dark:hover:text-zinc-100 ${
+        currentTheme === theme.toLowerCase() &&
+        "text-zinc-950 dark:text-zinc-100"
+      }`}
       onClick={() => {
         setTheme(theme.toLowerCase());
       }}
@@ -20,7 +23,7 @@ export default function AppearanceButton({
         <div className="p-1 border rounded-sm border-zinc-500 hover:border-zinc-400/50">
           {icon}
         </div>
-        <span className="text-gray-900 dark:text-gray-100">{theme}</span>
+        <span>{theme}</span>
       </div>
       {currentTheme === theme.toLowerCase() && <Check className="w-4 h-4" />}
     </button>

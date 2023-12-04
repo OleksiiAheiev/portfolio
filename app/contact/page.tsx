@@ -1,8 +1,7 @@
-import Link from "next/link";
 import Navigation from "../components/template/navigation/nav";
-import { Github, LinkIkon, LinkedIn, Mail, Telegram } from "../icons";
+import { Github, LinkedIn, Mail, Telegram } from "../icons";
 import { IContacts } from "@/lib/types";
-import Card from "../components/card";
+import ContactItems from "../components/contact-items";
 
 const contacts: IContacts[] = [
   {
@@ -46,24 +45,7 @@ export default function Contact() {
           <div className="h-px animate-fade-in bg-gradient-to-r from-zinc-900/0 dark:from-zinc-300/10 via-black dark:via-zinc-300/50 to-zinc-900/0 dark:to-zinc-300/0" />
           <div className="h-px animate-glow animate-fade-right bg-gradient-to-r from-zinc-900/0 dark:from-zinc-300/0 via-black dark:via-zinc-300/50 to-zinc-900/0 dark:to-zinc-300/0" />
           <div className="grid w-full grid-cols-1 gap-5 my-5 sm:grid-cols-2 animate-fade-in">
-            {contacts.map(({ icon, label, href, handle }) => (
-              <Card key={label}>
-                <Link
-                  href={href}
-                  target="_blank"
-                  className="flex flex-col gap-3"
-                >
-                  <span className="flex gap-2 font-bold items-left justify-left">
-                    {icon}
-                    {label}
-                  </span>
-                  <span className="flex items-center gap-2 duration-1000 text-md text-zinc-700 dark:text-white">
-                    <LinkIkon className="inline-block w-4 h-4 dark:fill-white" />
-                    {handle}
-                  </span>
-                </Link>
-              </Card>
-            ))}
+            <ContactItems contacts={contacts} />
           </div>
         </div>
       </div>
