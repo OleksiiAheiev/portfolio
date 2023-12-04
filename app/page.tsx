@@ -15,8 +15,8 @@ import {
 import ScrollingEffect from "./components/scrolling-effect";
 import Navigation from "./components/template/navigation/nav";
 import { ILogos } from "@/lib/types";
-import Logos from "./components/logos";
 import Particles from "./components/particles";
+import Logos from "./components/logos";
 
 
 const logos: ILogos[] = [

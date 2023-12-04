@@ -1,7 +1,7 @@
 import Card from "./card";
 import Link from "next/link";
-import { LinkIkon } from "../icons";
 import { IContactList } from "@/lib/types";
+import { LinkIkon } from "../icons";
 
 export default function ContactItems({ contacts }: IContactList) {
   return (
