@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { useMousePosition } from "@/utils/mousePosition";
 import { IParticlesProps } from "@/lib/types";
 
-export function Particles({
+export default function Particles({
   className = "",
   quantity = 30,
   staticity = 50,
