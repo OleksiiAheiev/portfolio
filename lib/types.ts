@@ -23,6 +23,11 @@ export interface ILogos extends ILogo {
   name: string;
 }
 
+export interface ILogosProps {
+  logos: ILogos[];
+  className: string;
+}
+
 export interface IMousePosition {
   x: number;
   y: number;

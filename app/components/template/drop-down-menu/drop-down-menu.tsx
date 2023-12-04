@@ -2,8 +2,8 @@ import React, { Fragment } from "react";
 import { ChevronDown } from "../../../icons";
 import { useTheme } from "next-themes";
 import { Popover, Transition } from "@headlessui/react";
-import AppearanceButton from "./AppearanceButton";
-import { appearances } from "../Navigation/MobileMenuDisclosure";
+import AppearanceButton from "./appearance-button";
+import { appearances } from "../navigation/mobile-menu-disclosure";
 
 export default function DropDownMenu() {
   const { theme: currentTheme } = useTheme();

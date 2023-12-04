@@ -1,8 +1,9 @@
 import React, { Fragment } from "react";
 import { CloseMenu } from "../../../icons";
 import { Dialog, Transition } from "@headlessui/react";
-import MobileMenuNavigation from "./MobileMenuNavigation";
-import MobileMenuDisclosure from "./MobileMenuDisclosure";
+import MobileMenuNavigation from "./mobile-menu-nav";
+import MobileMenuDisclosure from "./mobile-menu-disclosure";
+
 
 interface IMobileMenu {
   isOpen: boolean;

@@ -2,10 +2,10 @@
 
 import React, { useState } from "react";
 import { BurgerMenu } from "../../../icons";
-import MobileMenu from "./MobileMenu";
-import DropDownMenu from "../DropDownMenu/DropDownMenu";
+import DropDownMenu from "../drop-down-menu/drop-down-menu";
 import Link from "next/link";
 import { navigation } from "@/utils/arrays";
+import MobileMenu from "./mobile-menu";
 
 export default function Navigation({}) {
   const [isOpen, setIsOpen] = useState(false);

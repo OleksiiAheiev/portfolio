@@ -12,11 +12,12 @@ import {
   Tailwind,
   Typescript,
 } from "./icons";
-import { Particles } from "./components/Particles";
-import ScrollingEffect from "./components/ScrollingEffect";
-import Navigation from "./components/template/Navigation/Navigation";
-import Logos from "./components/Logos";
+import ScrollingEffect from "./components/scrolling-effect";
+import Navigation from "./components/template/navigation/nav";
 import { ILogos } from "@/lib/types";
+import { Particles } from "./components/particles";
+import Logos from "./components/logos";
+
 
 const logos: ILogos[] = [
   {

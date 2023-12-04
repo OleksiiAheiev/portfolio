@@ -1,8 +1,8 @@
 import Link from "next/link";
-import Navigation from "../components/template/Navigation/Navigation";
+import Navigation from "../components/template/navigation/nav";
 import { Github, LinkIkon, LinkedIn, Mail, Telegram } from "../icons";
-import Card from "../components/Card";
 import { IContacts } from "@/lib/types";
+import Card from "../components/card";
 
 const contacts: IContacts[] = [
   {

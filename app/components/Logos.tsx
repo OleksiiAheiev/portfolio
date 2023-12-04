@@ -1,9 +1,4 @@
-import { ILogos } from "@/lib/types";
-
-interface ILogosProps {
-  logos: ILogos[];
-  className: string;
-}
+import { ILogosProps } from "@/lib/types";
 
 export default function Logos({ logos, className }: ILogosProps) {
   return (

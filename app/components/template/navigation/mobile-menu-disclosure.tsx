@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { Disclosure, Transition } from "@headlessui/react";
 import { ChevronDown, Monitor, Moon, SunDim } from "@/app/icons";
-import AppearanceButton from "../DropDownMenu/AppearanceButton";
+import AppearanceButton from "../drop-down-menu/appearance-button";
 import { useTheme } from "next-themes";
 import { IAppearance } from "@/lib/types";
 
